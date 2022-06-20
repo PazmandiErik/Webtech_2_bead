@@ -15,10 +15,10 @@ Két lépésben szükséges telepíteni őket.
 
 Két parancssorban.
 
-1. cd "Webtech_2_bead"
+1. cd "Webtech_2_bead-main"
 2. node server.js
 -
-1. cd "Webtech_2_bead/beadando_frontend"
+1. cd "Webtech_2_bead-main/beadando_frontend"
 2. npm start
 
 Ezek után a localhost:4200 címen el lehet érni a weboldalt.
