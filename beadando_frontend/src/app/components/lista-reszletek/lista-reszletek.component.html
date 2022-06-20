@@ -1,0 +1,36 @@
+<div>
+    <div *ngIf="currentLista.id" class="edit-form">
+      <h4>Lista</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Cím</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="currentLista.title"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Leírás</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            [(ngModel)]="currentLista.description"
+            name="description"
+          />
+        </div>
+        <div class="form-group">
+          <label><strong>Státusz:</strong></label>
+          {{ currentLista.published ? "Published" : "Pending" }}
+        </div>
+      </form>
+      <p>{{ message }}</p>
+    </div>
+    <div *ngIf="!currentLista.id">
+      <br />
+      <p>Lista elem nem elérhető...</p>
+    </div>
+  </div>

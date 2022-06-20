@@ -1,0 +1,35 @@
+<div class="list row">
+    <div class="col-md-6">
+      <h4>Lista</h4>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let listaElem of lista; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveLista(listaElem, i)"
+        >
+          {{ listaElem.title }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="currentLista.id">
+        <h4>Lista elem</h4>
+        <div>
+          <label><strong>Cím:</strong></label> {{ currentLista.title }}
+        </div>
+        <div>
+          <label><strong>Leírás:</strong></label>
+          {{ currentLista.description }}
+        </div>
+        <div>
+          <label><strong>Állapot:</strong></label>
+          {{ currentLista.published ? "Published" : "Pending" }}
+        </div>
+      </div>
+      <div *ngIf="!currentLista">
+        <br />
+        <p>Kérlek, kattints egy elemre.</p>
+      </div>
+    </div>
+  </div>
