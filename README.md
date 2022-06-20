@@ -13,10 +13,10 @@ Két lépésben szükséges telepíteni őket.
 
 # Futtatás
 Két parancssorban.
-
+-
 1. cd "Webtech_2_bead"
 2. node server.js
-
+-
 1. cd "Webtech_2_bead/beadando_frontend"
 2. npm start
 
