@@ -6,14 +6,14 @@ ME 2022. II. (tavaszi) félév.
 # Csomagok telepítése
 Külön kell telepíteni a csomagokat a szerverhez és a klienshez.
 
-1. cd "Webtech 2 beadandó"
+1. cd "Webtech_2_bead"
 2. npm install
 3. cd "beadando_frontend"
 4. npm install
 
 # Futtatás
 
-1. cd "Webtech 2 beadandó"
+1. cd "Webtech_2_bead"
 2. node server.js
 3. cd "beadando_frontend"
 4. npm start
