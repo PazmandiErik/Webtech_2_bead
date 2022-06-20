@@ -12,8 +12,9 @@ Két lépésben szükséges telepíteni őket.
 4. npm install
 
 # Futtatás
+
 Két parancssorban.
--
+
 1. cd "Webtech_2_bead"
 2. node server.js
 -
